@@ -10,7 +10,7 @@ type Person = {
 type DataTableProps = {
   data: Person[]; // Expect an array of Person objects
 };
-
+//testing
 class DataTable extends Component<DataTableProps> {
   render() {
     const { data } = this.props;
