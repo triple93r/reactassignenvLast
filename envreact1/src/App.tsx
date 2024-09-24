@@ -1,4 +1,27 @@
 import React from 'react';
+import Datatable from './Datatable'; // Import the DataTable component
+
+// Static data with correct type
+const data: { id: number; name: string; age: number }[] = [
+  { id: 1, name: 'Rashmi', age: 31 },
+  { id: 2, name: 'Kunal', age: 27 },
+  { id: 3, name: 'Mandeep', age: 39 },
+];
+
+const App: React.FC = () => {
+  return (
+    <div>
+      <h1>Data Table</h1>
+      <Datatable data={data} /> {/* Pass data as props */}
+    </div>
+  );
+};
+
+export default App;
+
+
+
+/* import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -27,3 +50,4 @@ function App() {
 }
 
 export default App;
+ */
